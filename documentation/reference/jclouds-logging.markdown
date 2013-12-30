@@ -27,9 +27,7 @@ Wire Logging is intentionally nearly identical to the Apache HTTP Components pro
 
 The wire log is used to log all data transmitted to and from servers when executing HTTP requests. This log should only be enabled to debug problems, as it will produce an extremely large amount of log data, some of it in binary format.
 
-Because the content of HTTP requests is usually less important for debugging than the HTTP headers, these two types of data have been separated into different wire logs.
-
-NOTE: Wire log appender is `jclouds.wire` and headers log appender is `jclouds.headers`.
+Because the content of HTTP requests is usually less important for debugging than the HTTP headers, these two types of data have been separated into different logs, called `jclouds.wire` and `jclouds.headers` respectively. Set these to `DEBUG` or a more verbose level for troubleshooting.
 
 ## Usage
 
